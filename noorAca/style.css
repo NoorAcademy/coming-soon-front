@@ -1,0 +1,17 @@
+body {
+         background-image: url('/img/bcg.jpg');
+         background-size: 100%;
+}
+@font-face {
+               font-family: 'CoCon';
+                src: url('/fonts/CoCon.ttf');
+                font-weight: normal;
+                font-style: normal;
+
+}
+.ardiv{
+        font-family: 'CoCon',Sans-Serif;
+        direction:rtl;
+        font-size:30px;
+        
+    }
