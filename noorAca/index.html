@@ -2,13 +2,40 @@
 <html dir="rtl" lang="ar">
 
 <head>
+  <meta charset="UTF-8">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<style type="text/css">
+.btn-trans {
+     background:none!important;
+     color:inherit;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     font-family: 'CoconLight' ;
+     font-size: 20px;
 
+
+}
+.btn-trans:hover {
+     background:none!important;
+     color:#ccc;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     font-size: 20px;
+
+
+}
+.inform-me form {
+    display: none;
+}
+</style>
 </head>
 
 <body>
@@ -21,19 +48,32 @@
 
 
 
-    <div class="home-center-container">
+    <div id="center-intro" class="home-center-container">
         <div class="home-logo-container">
         </div>
         <div class="inform-me">
-            <a href="#">أعلمني عند إطلاق الموقع</a>
-            <form action="">
+        <button id="btn-inform" class="btn-trans" onclick="show_form()">  أعلمني عند إطلاق الموقع  </button>
+            
+            <form action=""  method="" id="inform-me-form">
                 <input id="trainee-email" type="email" name="trainee_email" placeholder="أدخل بريدك الإلكتروني">
                 <input id="send-trainee-btn" type="submit" name="submit" value="إرسال">
             </form>
 
         </div>
     </div>
+<div id="about-intro" class="home-center-container" style="display: none;">
+        <div class="home-logo-container ">
+        </div>
+        <div class="inform-me">
+            منصة إلكترونية تعليمية حديثة ، تهدف إلى تطوير مفهوم التعلم عن بعد في العالم العربي عن طريق أساليب حديثة ومبتكرة ، محتوى نور أكاديمي ليس مقتصراً فقط على الفيديوهات .. وإنما أيضا على الكتب الصوتية و النصية ، كما أنه هناك العديد من الميزات التي توفرها نور أكاديمي ..
 
+<br />
+<br />
+            <span>
+                رسالتنا : التعليم من زاوية أفضل.
+            </span>
+        </div>
+    </div>
 
 
     <div id="trainer-btn-container">
@@ -41,7 +81,21 @@
     </div>
 
     <footer>
-        <a id="about-us-link" href="#">عن الأكاديمية</a>
+    <div >
+<div class="about" style="">
+           <button onclick="show_about()" class="btn-trans"> عن الاكاديمية </button>
+        </div>
+
+<div class="social">
+    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
+    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
+
+    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
+    
+
+</div>
+</div>
+       <!-- <a id="about-us-link" href="#">عن الأكاديمية</a> -->
     </footer>
 
 </div>
@@ -54,5 +108,17 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script src="https://use.fontawesome.com/881d07bc20.js"></script>
+<script type="text/javascript">
+function show_about(){
+    document.getElementById('center-intro').style.display = 'none';
+    document.getElementById('about-intro').style.display = 'block';
 
+}
+function show_form(){
+    document.getElementById('btn-inform').style.display = 'none';
+    document.getElementById('inform-me-form').style.display = 'block';
+
+}
+
+</script>
 </html>
