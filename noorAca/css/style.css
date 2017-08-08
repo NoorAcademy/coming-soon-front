@@ -20,11 +20,11 @@ body {
     background-image: url(../img/bcg.jpg);
     background-size: cover;
     background-position: center center;
-    font-family: 'CoconLight', Sans-Serif !important;
+    font-family: 'CoconLight', Sans-Serif;
 }
 
 a:hover {
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 ::-webkit-input-placeholder {
@@ -87,7 +87,6 @@ a:hover {
     width: 100%;
     height: 180px;
     background-image: url(../img/nooracademy-logo.png);
-    vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
