@@ -1,5 +1,18 @@
 @import "../fonts/cocon/font.css";
 
+@font-face {
+    font-family: 'CoCon';
+    src: url('/fonts/CoCon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ardiv {
+    font-family: 'CoCon', Sans-Serif;
+    direction: rtl;
+    font-size: 30px;
+}
+
 body {
     display: block;
     height: 100vh;
@@ -7,37 +20,44 @@ body {
     background-image: url(../img/bcg.jpg);
     background-size: cover;
     background-position: center center;
-    font-family: 'CoconLight', Sans-Serif !important;
+    font-family: 'CoconLight', Sans-Serif;
 }
 
 a:hover {
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #fff;
-    opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #fff;
-    opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    #fff;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-    color:    #fff;
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #fff;
 }
 
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
 
 .ardiv {
-    font-family: 'CoconLight',Sans-Serif;
-    direction:rtl;
-    font-size:30px;
-
+    font-family: 'CoconLight', Sans-Serif;
+    direction: rtl;
+    font-size: 30px;
 }
 
 #main {
@@ -46,10 +66,10 @@ a:hover {
     display: table;
     background-color: rgba(255, 255, 255, 0.85);
     position: relative;
-    background: -moz-linear-gradient(45deg, rgba(10,234,254,0.7) 0%, rgba(12,32,131,0.7) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(10,234,254,0.7) 0%,rgba(12,32,131,0.7) 100%);
-    background: linear-gradient(45deg, rgba(10,234,254,0.7) 0%,rgba(12,32,131,0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b30aeafe', endColorstr='#b30c2083',GradientType=1 );
+    background: -moz-linear-gradient(45deg, rgba(10, 234, 254, 0.7) 0%, rgba(12, 32, 131, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(10, 234, 254, 0.7) 0%, rgba(12, 32, 131, 0.7) 100%);
+    background: linear-gradient(45deg, rgba(10, 234, 254, 0.7) 0%, rgba(12, 32, 131, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b30aeafe', endColorstr='#b30c2083', GradientType=1);
 }
 
 .home-center-container {
@@ -67,13 +87,11 @@ a:hover {
     width: 100%;
     height: 180px;
     background-image: url(../img/nooracademy-logo.png);
-    vertical-align: middle;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     margin: 0 auto;
 }
-
 
 #trainer-btn-container {
     width: 110px;
@@ -81,11 +99,11 @@ a:hover {
     position: absolute;
     right: 0;
     bottom: 100px;
-    background: rgb(0,106,188);
-    background: -moz-linear-gradient(left, rgb(0,106,188) 0%, rgb(0,186,196) 99%);
-    background: -webkit-linear-gradient(left, rgb(0,106,188) 0%,rgb(0,186,196) 99%);
-    background: linear-gradient(to right, rgb(0,106,188) 0%,rgb(0,186,196) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006abc', endColorstr='#00bac4',GradientType=1 );
+    background: rgb(0, 106, 188);
+    background: -moz-linear-gradient(left, rgb(0, 106, 188) 0%, rgb(0, 186, 196) 99%);
+    background: -webkit-linear-gradient(left, rgb(0, 106, 188) 0%, rgb(0, 186, 196) 99%);
+    background: linear-gradient(to right, rgb(0, 106, 188) 0%, rgb(0, 186, 196) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006abc', endColorstr='#00bac4', GradientType=1);
 }
 
 #trainer-btn {
@@ -100,7 +118,6 @@ a:hover {
     font-size: 17px;
 }
 
-
 #trainer-btn:after {
     content: ' ';
     width: 1px;
@@ -108,7 +125,7 @@ a:hover {
     position: absolute;
     left: -13px;
     bottom: 0;
-    border-bottom: 33px solid rgb(0,106,188);
+    border-bottom: 33px solid rgb(0, 106, 188);
     border-left: 13px solid transparent;
 }
 
@@ -130,6 +147,7 @@ a:hover {
 .inform-me a:hover {
     text-decoration: none;
 }
+
 .inform-me form {
     display: none;
 }
@@ -150,7 +168,6 @@ a:hover {
     outline: 0;
 }
 
-
 #send-trainee-btn {
     display: block;
     width: 80%;
@@ -162,60 +179,66 @@ a:hover {
     padding: 5px;
     background-color: rgba(48, 133, 149, 0.82);
     color: #175d85;
-    background: rgb(0,183,234);
-    background: -moz-linear-gradient(45deg, rgb(0,183,234) 0%, rgb(0,158,195) 100%);
-    background: -webkit-linear-gradient(45deg, rgb(0,183,234) 0%,rgb(0,158,195) 100%);
-    background: linear-gradient(45deg, rgb(0,183,234) 0%,rgb(0,158,195) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=1 );
+    background: rgb(0, 183, 234);
+    background: -moz-linear-gradient(45deg, rgb(0, 183, 234) 0%, rgb(0, 158, 195) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(0, 183, 234) 0%, rgb(0, 158, 195) 100%);
+    background: linear-gradient(45deg, rgb(0, 183, 234) 0%, rgb(0, 158, 195) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3', GradientType=1);
 }
-
-
-
 
 .about {
-    display:inline-block;
-    float: center;
+    /* display: inline-block; */
+    /*float: center; *//* there's not such value in float called "center" */
+    float: left;
     width: 50%;
-
     padding-top: 1.5%;
-
-    text-align:right;
+    text-align: right;
     margin: 0 auto;
-
 }
+
 .social {
-    display:inline-block;
+    /* display: inline-block; */
     float: right;
-    width: 50%;
+     width: 50%; 
     padding-top: 1.5%;
     padding-right: 1.5%;
-
-
-
-
+    text-align: left;
 }
+
+.social a{
+    float: left;
+    padding: 5px 10px;
+}
+.social .social-link {
+    float: right;
+}
+.social a .fa {
+    font-size: 20px;
+    direction: ltr
+}
+
 .social-net {
     height: 33px;
     width: 28px;
 }
+
 .btn-trans {
-     background:none!important;
-     color:inherit;
-     border:none;
-     padding:0!important;
-     font: inherit;
-
-
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    font-family: 'CoconLight';
+    font-size: 20px;
 }
+
 .btn-trans:hover {
-     background:none!important;
-     color:#ccc;
-     border:none;
-     padding:0!important;
-     font: inherit;
-     font-size: 20px;
-
-
+    background: none;
+    color: #ccc;
+    border: none;
+    padding: 0;
+    font: inherit;
+    font-size: 20px;
 }
 
 footer {
@@ -235,6 +258,3 @@ footer #about-us-link {
     display: block;
     margin-top: 18px;
 }
-
-
-

@@ -1,10 +1,30 @@
-function show_about(){
-    document.getElementById('center-intro').style.display = 'none';
-    document.getElementById('about-intro').style.display = 'block';
-
+var getElm = function (elm) {
+    return document.querySelector(elm)
 }
-function show_form(){
-    document.getElementById('btn-inform').style.display = 'none';
-    document.getElementById('inform-me-form').style.display = 'block';
 
+// function to hide elements without repeating code
+var hide = function (el) {
+    if(typeof el == 'string'){
+        el = getElm(el)
+    }
+    el.style.display = 'none'
+}
+
+var show = function (el) {
+    if (typeof el == 'string') {
+        el = getElm(el)
+    }
+    el.style.display = 'inherit'
+}
+
+var btnInform = document.querySelector('#btn-inform');
+
+document.getElementById('about_acdm').onclick = function (e) {
+    hide('#center-intro');
+    show('#about-intro');
+}
+
+btnInform.onclick = function () {
+    hide(btnInform);
+    show('#inform-me-form');
 }
