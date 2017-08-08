@@ -1,4 +1,5 @@
 @import "../fonts/cocon/font.css";
+
 @font-face {
     font-family: 'CoCon';
     src: url('/fonts/CoCon.ttf');
@@ -187,8 +188,9 @@ a:hover {
 }
 
 .about {
-    display: inline-block;
-    float: center; /*there's not value of float called center*/
+    /* display: inline-block; */
+    /*float: center; *//* there's not such value in float called "center" */
+    float: left;
     width: 50%;
     padding-top: 1.5%;
     text-align: right;
@@ -198,9 +200,22 @@ a:hover {
 .social {
     /* display: inline-block; */
     float: right;
-    width: 50%;
+     width: 50%; 
     padding-top: 1.5%;
     padding-right: 1.5%;
+    text-align: left;
+}
+
+.social a{
+    float: left;
+    padding: 5px 10px;
+}
+.social .social-link {
+    float: right;
+}
+.social a .fa {
+    font-size: 20px;
+    direction: ltr
 }
 
 .social-net {
