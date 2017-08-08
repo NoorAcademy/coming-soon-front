@@ -2,110 +2,95 @@
 <html dir="rtl" lang="ar">
 
 <head>
-  <meta charset="UTF-8">
-  
+    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Nooracademy</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-<style type="text/css">
-.btn-trans {
-     background:none!important;
-     color:inherit;
-     border:none;
-     padding:0!important;
-     font: inherit;
-     font-family: 'CoconLight' ;
-     font-size: 20px;
-
-
-}
-.btn-trans:hover {
-     background:none!important;
-     color:#ccc;
-     border:none;
-     padding:0!important;
-     font: inherit;
-     font-size: 20px;
-
-
-}
-.inform-me form {
-    display: none;
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+    <header>
 
-</header>
+    </header>
 
-<div id="main">
+    <div id="main">
 
 
 
-    <div id="center-intro" class="home-center-container">
-        <div class="home-logo-container">
+        <div id="center-intro" class="home-center-container">
+            <div class="home-logo-container">
+            </div>
+            <div class="inform-me">
+                <button id="btn-inform" class="btn-trans">  أعلمني عند إطلاق الموقع  </button>
+
+                <form action="" method="" id="inform-me-form">
+                    <input id="trainee-email" type="email" name="trainee_email" placeholder="أدخل بريدك الإلكتروني">
+                    <input id="send-trainee-btn" type="submit" name="submit" value="إرسال">
+                </form>
+
+            </div>
         </div>
-        <div class="inform-me">
-        <button id="btn-inform" class="btn-trans" onclick="show_form()">  أعلمني عند إطلاق الموقع  </button>
-            
-            <form action=""  method="" id="inform-me-form">
-                <input id="trainee-email" type="email" name="trainee_email" placeholder="أدخل بريدك الإلكتروني">
-                <input id="send-trainee-btn" type="submit" name="submit" value="إرسال">
-            </form>
+        <div id="about-intro" class="home-center-container" style="display: none;">
+            <div class="home-logo-container ">
+            </div>
+            <div class="inform-me">
+                منصة إلكترونية تعليمية حديثة ، تهدف إلى تطوير مفهوم التعلم عن بعد في العالم العربي عن طريق أساليب حديثة ومبتكرة ، محتوى نور
+                أكاديمي ليس مقتصراً فقط على الفيديوهات .. وإنما أيضا على الكتب الصوتية و النصية ، كما أنه هناك العديد من
+                الميزات التي توفرها نور أكاديمي ..
 
-        </div>
-    </div>
-<div id="about-intro" class="home-center-container" style="display: none;">
-        <div class="home-logo-container ">
-        </div>
-        <div class="inform-me">
-            منصة إلكترونية تعليمية حديثة ، تهدف إلى تطوير مفهوم التعلم عن بعد في العالم العربي عن طريق أساليب حديثة ومبتكرة ، محتوى نور أكاديمي ليس مقتصراً فقط على الفيديوهات .. وإنما أيضا على الكتب الصوتية و النصية ، كما أنه هناك العديد من الميزات التي توفرها نور أكاديمي ..
-
-<br />
-<br />
-            <span>
+                <br />
+                <br />
+                <span>
                 رسالتنا : التعليم من زاوية أفضل.
             </span>
-        </div>
-    </div>
-
-
-    <div id="trainer-btn-container">
-        <a id="trainer-btn" href="#">متدرب؟</a>
-    </div>
-
-    <footer>
-    <div >
-<div class="about" style="">
-           <button onclick="show_about()" class="btn-trans"> عن الاكاديمية </button>
+            </div>
         </div>
 
-<div class="social">
-    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
-    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
 
-    <a href=""> <img src="/img/tw.png" class="social-net"> </a>
-    
+        <div id="trainer-btn-container">
+            <a id="trainer-btn" href="#">متدرب؟</a>
+        </div>
 
-</div>
-</div>
-       <!-- <a id="about-us-link" href="#">عن الأكاديمية</a> -->
-    </footer>
+        <footer>
+            <div>
+                <div class="about">
+                    <button id="about_acdm" class="btn-trans"> عن الاكاديمية </button>
+                </div>
 
-</div>
+                <div class="social">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa fa-github"></i>
+                    </a>
+
+
+                </div>
+            </div>
+            <!-- <a id="about-us-link" href="#">عن الأكاديمية</a> -->
+        </footer>
+
+    </div>
 
 
 
 </body>
 
+<script src="https://use.fontawesome.com/881d07bc20.js"></script>
 <script data-require="jquery@2.1.4" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
-<script src="https://use.fontawesome.com/881d07bc20.js"></script>
+
+
 </html>
